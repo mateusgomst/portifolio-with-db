@@ -1,0 +1,65 @@
+<header>
+  <div class="navbar">
+    <h1>Mateus Gomes</h1>
+    <a href="https://www.linkedin.com/in/mateusgomst/" target="_blank">Contato</a>
+  </div>
+</header>
+
+<div class="profile">
+  <img src="https://media.licdn.com/dms/image/v2/D4E03AQF0JY2koJvzfQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721348787815?e=1735776000&v=beta&t=Aqn9GsGP83C67sJRkANqCyuQ0kkUvsJJevPL2sFqVVw" alt="Foto de Mateus Gomes" class="profile-pic">
+  <h2>Mateus Gomes</h2>
+  <p>Desenvolvedor</p>
+  
+  <!-- Link para o GitHub com a imagem -->
+  <a href="https://github.com/mateusgomst" target="_blank">
+    <%= image_tag "icons8-github-30.png", class: "github-icon" %>
+  </a>
+  
+  <!-- Link para o LinkedIn com a imagem -->
+  <a href="https://www.linkedin.com/in/mateusgomst/" target="_blank">
+    <%= image_tag "icons8-linkedin-48.png", class: "linkedin-icon" %>
+  </a>
+</div>
+
+<div class="about-me">
+    <h3>Sobre Mim</h3>
+    <p>Sou um entusiasta de tecnologia com experiência prática em desenvolvimento de software. Meu foco está em backend, onde busco criar soluções robustas e escaláveis. Tenho experiência com Ruby on Rails e Java, que me permite desenvolver aplicações web dinâmicas e eficientes.
+
+      Destaco-me pela minha proatividade e forte capacidade de resolução de problemas, sempre em busca de soluções inovadoras. Gosto de trabalhar em equipe e colaborar em projetos desafiadores, aplicando boas práticas de desenvolvimento e controle de versão.
+
+      Estou comprometido em aplicar meu conhecimento técnico em situações reais, contribuindo para equipes e projetos que visam a inovação e a excelência.</p>
+
+    <div class="tech-icons">
+        <%= image_tag "a.png", alt: "Git", title: "Git" %>
+        <%= image_tag "b.png", alt: "Ruby", title: "Ruby" %>
+        <%= image_tag "c.png", alt: "Java", title: "Java" %>
+        <%= image_tag "d.png", alt: "PostgreSQL", title: "PostgreSQL" %>
+        <%= image_tag "e.png", alt: "C", title: "C" %>
+        <%= image_tag "f.png", alt: "C++", title: "C++" %>
+    </div>
+</div>
+
+<section class="education">
+  <h2>Formação Acadêmica</h2>
+  <div class="education-item">
+    <h3>Bacharel em Ciências da Computação</h3>
+    <p><a href="https://www.pucgoias.edu.br" target="_blank">PUC Goiás</a></p>
+    <p>Ano de Conclusão: 2027</p>
+  </div>
+</section>
+
+<div class="experiences">
+  <h2>Experiência Profissional</h2> 
+  <% @experiences.each do |experience| %>
+    <div class="experience">
+      <h2><%= experience.name %></h2>
+      <p class="description"><strong>Descrição:</strong> <%= experience.description %></p>
+      <p class="date"><strong>Data de Início:</strong> <%= experience.start_date %></p>
+    </div>
+  <% end %>
+</div>
+
+
+<footer>
+  <p>2024 © Desenvolvido por <a href="https://github.com/mateusgomst" target="_blank">Mateus Gomes</a></p>
+</footer>

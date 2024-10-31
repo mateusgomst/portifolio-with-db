@@ -1,0 +1,217 @@
+/* Estilos da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar a {
+      margin-top: 5px; /* Espaço entre os itens */
+    }
+  }
+  
+  /* Estilos do perfil */
+  .profile {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  
+
+  .profile-pic {
+    width: 140px; /* Aumentando o tamanho da foto */
+    height: 140px; /* Aumentando o tamanho da foto */
+    border-radius: 50%; /* Faz a foto ficar redonda */
+    object-fit: cover; /* Corta a imagem para caber no tamanho */
+    border: 2px solid #007bff; /* Borda azul ao redor da foto */
+}
+
+  
+  .profile h2 {
+    margin: 10px 0 5px 0;
+    color: #333;
+  }
+  
+  .profile p {
+    color: #666;
+  }
+  
+  /* Estilos das experiências */
+  .experiences {
+    padding: 20px;
+  }
+  
+  .experience {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .experience h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  .experience .description,
+  .experience .date {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .experience:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para telas pequenas - perfil */
+  @media (max-width: 600px) {
+    .profile {
+      margin: 10px 0;
+    }
+  
+    .profile h2, .profile p {
+      font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+  
+    .profile-pic {
+      width: 80px; /* Tamanho da foto menor em telas pequenas */
+      height: 80px; /* Tamanho da foto menor em telas pequenas */
+    }
+  }
+  
+/* Estilos da barra de rodapé */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #333;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Estilos da seção de Formação Acadêmica */
+.education {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #dee2e6;
+    margin: 20px 0;
+  }
+  
+  .education h2 {
+    margin: 0 0 15px 0;
+    color: #333;
+  }
+  
+  .education-item {
+    margin-bottom: 15px;
+  }
+  
+  .education-item h3 {
+    margin: 0;
+    color: #007bff;
+  }
+  
+  .education-item p {
+    margin: 5px 0;
+    color: #666;
+  }
+
+  .about-me {
+    padding: 20px;
+    background-color: #f1f1f1; /* Fundo cinza claro */
+    border-radius: 5px; /* Cantos arredondados */
+    margin: 20px 0; /* Espaço acima e abaixo */
+}
+
+.about-me h3 {
+    color: #333; /* Cor do título */
+}
+
+.about-me p {
+    color: #666; /* Cor do texto */
+}
+
+
+.icon-link {
+    text-decoration: none; /* Remove o sublinhado apenas dos links de ícones */
+}
+
+.icon-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, se desejado */
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado de todos os links */
+}
+
+.icon-link {
+    display: inline-block; /* Certifica-se de que o link se comporte como um bloco em linha */
+}
+
+.icon-link img {
+    vertical-align: middle; /* Alinha a imagem ao meio, se necessário */
+}
+
+/* Opcional: Efeito ao passar o mouse */
+.icon-link:hover img {
+    opacity: 0.8; /* Pode adicionar um efeito de opacidade ao passar o mouse */
+}
+
+.github-icon,
+.linkedin-icon {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    margin-top: 10px; /* Espaço acima dos ícones */
+}
+
+.tech-icons img {
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 30px; /* Mantém a proporção */
+    margin: 0 10px; /* Espaço entre os ícones */
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+}
+
+.tech-icons img:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+  
